@@ -1,0 +1,121 @@
+//The code below will prompt the LED at D7 of the Argon to blink 'Meredith' in Morse code.
+
+
+//The blue D7 LED
+const pin_t My_LED = D7;
+
+
+// The setup() method is called once when the Argon boots up
+void setup()
+{
+  pinMode(My_LED, OUTPUT); // Tells the Argon that the pin is an output pin
+}
+
+void loop()  // The loop for the Argon to blink the name 'Meredith' in Morse code
+{
+
+    //Morse Code for M
+    
+    digitalWrite(My_LED, HIGH);	   
+    delay(1000);				
+    digitalWrite(My_LED, LOW);	  
+    delay(500);
+    digitalWrite(My_LED, HIGH);	   
+    delay(1000);				
+    digitalWrite(My_LED, LOW);	  
+    delay(1000);
+
+    
+    //Morse Code for E DONE
+    
+    digitalWrite(My_LED, HIGH);
+    delay(500);
+    digitalWrite(My_LED, LOW);
+    delay(1000);
+
+    
+    //Morse Code for R DONE
+    
+    digitalWrite(My_LED, HIGH);
+    delay(500);
+    digitalWrite(My_LED, LOW);
+    delay(1000);
+    digitalWrite(My_LED, HIGH);	   
+    delay(1000);				
+    digitalWrite(My_LED, LOW);	  
+    delay(1000);
+    digitalWrite(My_LED, HIGH);	   
+    delay(500);				
+    digitalWrite(My_LED, LOW);	  
+    delay(1000);
+    
+    //Morse Code for E DONE
+    
+    digitalWrite(My_LED, HIGH);
+    delay(500);
+    digitalWrite(My_LED, LOW);
+    delay(1000);
+
+
+    
+    //Morse Code for D DONE
+    
+    digitalWrite(My_LED, HIGH);	   
+    delay(1000);				
+    digitalWrite(My_LED, LOW);	  
+    delay(1000);
+    digitalWrite(My_LED, HIGH);
+    delay(500);
+    digitalWrite(My_LED, LOW);
+    delay(1000); 
+    digitalWrite(My_LED, HIGH);
+    delay(500);
+    digitalWrite(My_LED, LOW);
+    delay(1000);
+    
+    //Morse Code for I DONE
+    
+    digitalWrite(My_LED, HIGH);
+    delay(500);
+    digitalWrite(My_LED, LOW);
+    delay(1000);
+    digitalWrite(My_LED, HIGH);	   
+    delay(500);				
+    digitalWrite(My_LED, LOW);	  
+    delay(1000);
+    
+    //Morse Code for T DONE
+    
+    digitalWrite(My_LED, HIGH);	   
+    delay(1000);
+    digitalWrite(My_LED, LOW);	  
+    delay(1000);
+    
+    //Morse Code for H DONE
+    
+    digitalWrite(My_LED, HIGH);
+    delay(500);
+    digitalWrite(My_LED, LOW);
+    delay(1000);
+    digitalWrite(My_LED, HIGH);
+    delay(500);
+    digitalWrite(My_LED, LOW);
+    delay(1000); 
+    digitalWrite(My_LED, HIGH);
+    delay(500);
+    digitalWrite(My_LED, LOW);
+    delay(1000); 
+    digitalWrite(My_LED, HIGH);
+    delay(500);
+    digitalWrite(My_LED, LOW);
+    delay(1000); 
+    
+    
+    //END
+    
+    digitalWrite(My_LED,LOW);
+    delay(5000);
+    
+    // And repeat!
+
+}
